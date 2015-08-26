@@ -1,2 +1,0 @@
-HEY! I’m a file!
-MODIFICATIONS!
