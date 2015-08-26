@@ -1,0 +1,6 @@
+status - The current status of your git repo (files waiting to be added, files missing)
+add - add your changes to commit them
+commit - Finalize your changes in your git repo
+log - show all of your past changes
+push origin master - move your changes from your computer to the GitHub server
+pull - Take changes from GitHub down to your computer
