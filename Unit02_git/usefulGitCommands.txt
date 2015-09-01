@@ -3,4 +3,6 @@ add - add your changes to commit them
 commit -m "Message" - Finalize your changes in your git repo. If vim comes up, type :q!
 log - show all of your past changes
 push origin master - move your changes from your computer to the GitHub server
-pull - Take changes from GitHub down to your computer
+pull - Download changes from GitHub to your computer
+checkout -- [filename] - remove changes that have happened in a file since the last commit
+help [command] - gives you help for a specific command

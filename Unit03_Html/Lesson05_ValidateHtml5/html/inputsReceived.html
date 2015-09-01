@@ -2,6 +2,25 @@
 <html>
 <head>
 	<title>Inputs Received</title>
+	<style>
+		* {
+			color: #00FF00;
+		}
+		body {
+			background-color: black;
+			padding-top: 20px;
+			padding-left: 40px;
+			font-size: 20pt;
+		}
+		.paramName, .paramValue {
+			font-family: "Courier New", Courier, monospace;
+		}
+		input[type=button] {
+			background-color: black;
+			color: #00FF00;
+			border: 2px solid #00FF00;
+		}
+	</style>
 	<script>
 		function parseParams() {
             var paramMap = {};
@@ -47,6 +66,6 @@
             <b>Value:</b> <span class="paramValue"></span>
         </div>
     </div>
-    <input type="button" value="Back" onclick="window.history.back();">
+    <input type="button" value="&lt;&lt; Back" onclick="window.history.back();">
 </body>
 </html>
