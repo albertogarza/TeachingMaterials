@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap</title>
+	<title>Bootstrap Forms</title>
 	<!-- Latest compiled and minified CSS -->
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 	<link rel="stylesheet" href="lib/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet" href="css/style.css">
 	<!--<link rel="stylesheet" media="print" href="css/print.css" />-->
 	<!-- Optional theme -->
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
@@ -128,7 +128,7 @@
 	fieldset disabled
 -->
 
-	<div class="well-sm hidden-print hidden-xs">
+	<div class="well-sm hidden-print hidden-xs" id="search-div">
 		<form class="form-inline">
 			<fieldset disabled>
 				<div class="form-group">
@@ -147,18 +147,29 @@
 	id:search-div
 	print display:none
 	print.css
--->
 
-<!--
 	bootstrap...
 	.hidden-print
-
-	.content.visible-print-block Watermark goes here
-
 	search .hidden-xs
 -->
 
+<!--
+	.content.visible-print-block Watermark goes here
+-->
+
 	<div class="content visible-print-block text-center">Watermark goes here</div>
+
+<!--
+	a.sudo # Pseudo Stylin'
+	css...
+	:first-of-type
+	::first-letter
+	::before
+-->
+
+	<div class="well-sm">
+		<a href="#" class="sudo">Pseudo Stylin'</a>
+	</div>
 
 </body>
 </html>
