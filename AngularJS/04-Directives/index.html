@@ -25,7 +25,6 @@
 				</button>
 				<br />
 				count: {{ count1 }}
-				<br />
 
 
 				<h3>ngMouse*</h3>
@@ -38,21 +37,18 @@
 				</button>
 				<br />
 				count: {{ count2 }}
-				<br />
 
 
 				<h3>ngKeyPress</h3>
 				<input ng-keypress="count3=count3+1" ng-model="value3">
 				<br />
 				count: {{ count3 }}
-				<br />
 
 
 				<h3>ngKeydown, ngKeyup</h3>
-				<input ng-keydown="value4=$event.which" ng-keyup="value4=''">
+				<input ng-keydown="value4=$event.keyCode" ng-keyup="value4=''">
 				<br />
 				value: {{ value4 }}
-				<br />
 
 
 				<h3>ngChange</h3>
@@ -61,25 +57,25 @@
 				value: {{ value5 }}
 				<br />
 				count: {{ count5 }}
-				<br />
 
 
 				<h3>ngFocus, ngBlur</h3>
 				<input ng-focus="value6='focus'" ng-blur="value6=''" ng-model="value6">
 				<br />
 				value: {{ value6 }}
-				<br />
 
 
 				<h3>ngHref</h3>
 				<input ng-model="value7" ng-init="value7='ngHref'">
 				<br />
 				<a ng-href="//code.angularjs.org/1.4.7/docs/api/ng/directive/{{ value7 }}" target="_blank">{{ value7 }} Docs</a>
-				<br />
 
 
 				<h3>ngSrc</h3>
+				Icon name:
 				<input ng-model="value8" ng-init="value8='search'">
+				<br />
+				Icon color: 
 				<input type="radio" ng-model="color8" value="black" id="black" ng-init="color8='black'">
 				<label for="black">Black</label>
 				<input type="radio" ng-model="color8" value="white" id="white">

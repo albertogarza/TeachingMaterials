@@ -9,32 +9,55 @@
 </head>
 <body>
 
+   	<br />
     <div class="container">
+        <div class="panel panel-success">
+        
+        	<div class="panel-heading panel-title">
+        		<h1>Basic MVC Angular App</h1>
+			</div>
 
-        <div ng-controller="basicController">
-            <h2>Controller 1</h2>
-            <input type="text" ng-model="sometext" />
-            <h3>Hello {{ sometext }}</h3>
-            <button ng-click="doSomething()">Do It!</button>
-        </div>
+			<div class="panel-body">
 
-        <hr />
+				<h2>no controller ($rootScope)</h2>
+				<input type="text" ng-model="sometext" />
+				<h3>Hello {{ sometext }}</h3>
+				<button ng-click="doSomething()">Clear</button>
+				<hr />
 
-        <div ng-controller="basicController">
-            <h2>Controller 2</h2>
-            <input type="text" ng-model="sometext" />
-            <h3>Hello {{ sometext }}</h3>
-            <button ng-click="doSomething()">Submit</button>
-        </div>
+				<div ng-controller="basicController">
+					<h2>Controller 1 ($scope 1)</h2>
+					<input type="text" ng-model="sometext" />
+					<h3>Hello {{ sometext }}</h3>
+					<button ng-click="doSomething()">Clear</button>
+<!--
+					<br />
+					<br />
+					<div ng-controller="basicController" class="well">
+						<h2>Nested Controller 2 ($scope 2, inside $scope 1)</h2>
+						<input type="text" ng-model="sometext" />
+						<h3>Hello {{ sometext }}</h3>
+						<button ng-click="doSomething()">Clear</button>
+					</div>
+-->
+				</div>
 
-        <hr />
 
-        <h2>no controller</h2>
-        <input type="text" ng-model="sometext" />
-        <h3>Hello {{ sometext }}</h3>
-        <button ng-click="doSomething()">Do It!</button>
-    </div>
+<!--				<hr />
 
+				<div ng-controller="basicController">
+					<h2>Separate Controller 3 ($scope 3)</h2>
+					<input type="text" ng-model="sometext" />
+					<h3>Hello {{ sometext }}</h3>
+					<button ng-click="doSomething()">Clear</button>
+				</div>
+-->
+
+			</div>
+			
+		</div>
+	</div>
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
 
     <script type="text/javascript" src="controller.js"></script>

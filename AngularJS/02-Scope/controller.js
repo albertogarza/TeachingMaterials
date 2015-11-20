@@ -8,10 +8,17 @@
 
     function basicController($scope) {
 
-        $scope.sometext = '';
-
         $scope.doSomething = function() {
             $scope.sometext = '';
+        };
+    }
+
+    function basicController2() {
+
+		var bc = this;
+		
+        bc.doSomething = function() {
+            bc.sometext = '';
         };
     }
 
