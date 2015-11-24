@@ -13,4 +13,13 @@
         };
     }
 
+    function basicController2() {
+
+		var bc = this;
+		
+        bc.doSomething = function() {
+            bc.sometext = '';
+        };
+    }
+
 }());
