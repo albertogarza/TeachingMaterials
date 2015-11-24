@@ -11,28 +11,26 @@
 
     <div class="container">
 
-        <div ng-controller="basicController">
+        <div ng-controller="basicController" class="alert alert-info">
             <h2>Controller 1</h2>
             <input type="text" ng-model="sometext" />
             <h3>Hello {{ sometext }}</h3>
             <button ng-click="doSomething()">Do It!</button>
         </div>
 
-        <hr />
-
-        <div ng-controller="basicController">
+        <div ng-controller="basicController" class="alert alert-info">
             <h2>Controller 2</h2>
             <input type="text" ng-model="sometext" />
             <h3>Hello {{ sometext }}</h3>
-            <button ng-click="doSomething()">Submit</button>
+            <button ng-click="doSomething()">Do It!</button>
         </div>
 
-        <hr />
-
-        <h2>no controller</h2>
-        <input type="text" ng-model="sometext" />
-        <h3>Hello {{ sometext }}</h3>
-        <button ng-click="doSomething()">Do It!</button>
+        <div class="alert alert-info">
+            <h2>no controller</h2>
+            <input type="text" ng-model="sometext" />
+            <h3>Hello {{ sometext }}</h3>
+            <button ng-click="doSomething()">Do It!</button>
+        </div>
     </div>
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>

@@ -8,8 +8,6 @@
 
     function basicController($scope) {
 
-        $scope.sometext = '';
-
         $scope.doSomething = function() {
             $scope.sometext = '';
         };

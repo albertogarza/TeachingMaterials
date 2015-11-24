@@ -9,7 +9,6 @@
     function basicController() {
 
         var bc = this;
-        bc.sometext = '';
 
         bc.doSomething = doSomething;
 
