@@ -3,6 +3,7 @@
 
     angular.module('basicApp', [
         "ui.router",
+        "navController",
         "basicController"
     ])
 
