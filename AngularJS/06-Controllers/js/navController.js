@@ -4,7 +4,7 @@
     angular.module('navController', [])
         .controller('navController', navController);
 
-    basicController.$inject = ["$location"];
+    navController.$inject = ["$location"];
 
     function navController($location)
     {
@@ -13,7 +13,7 @@
 
         function isActive(viewLocation) {
             return viewLocation === $location.path();
-        };
+        }
     }
 
 }());
