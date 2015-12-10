@@ -10,10 +10,22 @@
 
         var bc = this;
 
-        bc.doSomething = doSomething;
+        // attributes
+        bc.sometext = 'sometext';
+        bc.name = 'Todd Hale';
+        bc.company = 'Xactware';
 
+        // functions
+        bc.doSomething = doSomething;
+        bc.clearAll = clearAll;
+
+        // function definitions
         function doSomething() {
             bc.sometext = '';
+        }
+
+        function clearAll() {
+
         }
     }
 

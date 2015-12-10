@@ -24,10 +24,13 @@
                 <a ui-sref="home" class="navbar-brand">Brand</a>
             </div>
             <!-- Collection of nav links and other content for toggling -->
-            <div id="navbarCollapse" class="collapse navbar-collapse" ng-controller="navController as nav">
+            <div id="navbarCollapse" class="collapse navbar-collapse"
+                    ng-controller="navController as nav">
                 <ul class="nav navbar-nav">
-                    <li ng-class="{ active: nav.isActive('/home')}"><a ui-sref="home">Home</a></li>
-                    <li ng-class="{ active: nav.isActive('/about')}"><a ui-sref="about">About</a></li>
+                    <li ng-class="{ active: nav.isActive('/home')}">
+                        <a ui-sref="home">Home</a></li>
+                    <li ng-class="{ active: nav.isActive('/about')}">
+                        <a ui-sref="about">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a ui-sref="login">Login</a></li>
@@ -41,7 +44,7 @@
 
     <!-- lib js files -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-    <script type="text/javascript" src="node_modules/ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/an"></script>
 
     <!-- app js files -->
     <script type="text/javascript" src="js/navController.js"></script>

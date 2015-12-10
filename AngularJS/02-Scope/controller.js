@@ -7,6 +7,8 @@
     basicController.$inject = ['$scope'];
 
     function basicController($scope) {
+
+
         $scope.doSomething = function() {
             $scope.sometext = '';
         };

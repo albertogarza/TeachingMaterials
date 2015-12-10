@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
+	<style>
+		input {
+			border-color: black !important;
+		}
+	</style>
+
+
 </head>
 <body>
 
@@ -16,6 +23,42 @@
 			<div class="panel-heading">
 				<h1>More Directives</h1>
 			</div>
+
+			<div ng-init="children=[]">
+				<label for="cbIns">
+				<input id="cbIns" type="checkbox" ng-model="hasInsurance">
+				Has Insurance
+				</label>
+				<div ng-hide="hasInsurance">
+					You will pay!!
+				</div>
+				<br clear="both" />
+
+				<button ng-click="children.push({name:'',bdate:''})">
+					Add Child</button>
+
+				<div ng-repeat="child in children">
+					Name:
+					<input type="text" ng-model="child.name"><br />
+					Birthday:
+					<input type="date" ng-model="child.bdate">
+				</div>
+
+				Favorite Child:
+				<select>
+					<option ng-repeat="child in children" ng-bind="child.name"></option>
+				</select>
+
+			</div>
+
+
+
+
+
+
+
+
+
 
 			<div class="panel-body">
 			
