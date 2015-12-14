@@ -1,0 +1,20 @@
+<div class="alert alert-success">
+    <img src="http://i.giphy.com/d2ZfEDl6ZBPj5qlq.gif"><br />
+    <br />
+
+    <h3>Angular Filters</h3><br />
+
+    <h4>Cost of Toothbrush: {{ hc.costOfToothbrush }}</h4><br />
+    <h4>Alone Date: {{ hc.aloneDate }}</h4><br />
+    <h4>Marble Count: {{ hc.marbleCount }}</h4><br />
+
+    <h4>Contacts:</h4>
+    <input ng-model="searchText">
+    <table>
+        <tr ng-repeat="contact in hc.contacts">
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.phone }}</td>
+        </tr>
+    </table>
+
+</div>
