@@ -6,7 +6,6 @@ REQUIRED FUNCTIONALITY
     Users can mark a task as complete
     Users can clear their completed tasks
     Use ui-router to navigate between an about page and the main list page
-    Use ngStorage to store all list data to local storage
     Use some basic styles to enhance the look of the page
 
 AWESOME FUNCTIONALITY
@@ -15,4 +14,5 @@ AWESOME FUNCTIONALITY
     Users can modify the text of an existing list item
     Users can delete tasks and lists without needing to complete them first
     Marking tasks complete or clearing all completed tasks/lists is animated
+    Use ngStorage to store all list data to local storage
     Super-awesome-fantastic styling of your app
