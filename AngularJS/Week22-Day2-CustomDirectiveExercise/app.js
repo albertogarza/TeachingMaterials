@@ -13,6 +13,6 @@ angular.module('isolate-scope', [])
                 name: '=',
                 action: '&'
             },
-            template: '<span>Customer name (from directive): <input ng-model="name"/><input type="button" ng-click="action()" value="Click Me!"/></span>'
+            template: '<span>Customer name (from directive): <input ng-model="name"/><input type="button" ng-click="action()(123)" value="Click Me!"/></span>'
         };
     });
