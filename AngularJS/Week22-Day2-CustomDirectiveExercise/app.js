@@ -9,10 +9,19 @@ angular.module('isolate-scope', [])
 
     .directive('customerName', function() {
         return {
-            scope: {
-                name: '=',
+            //scope: {
+            //    name: '=',
+            //    action: '&'
+            //},
+            //bindToController: true,
+            bindToController: {
+                dirname: '=',
                 action: '&'
             },
-            template: '<span>Customer name (from directive): <input ng-model="name"/><input type="button" ng-click="action()(123)" value="Click Me!"/></span>'
+            controller: function() {
+
+            },
+            controllerAs: 'vm',
+            template: '<span>Customer name (from directive): <input ng-model="vm.dirname"/><input type="button" ng-click="vm.action()(123)" value="Click Me!"/></span>'
         };
     });
