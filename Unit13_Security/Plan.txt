@@ -1,0 +1,18 @@
+ASCII
+	String.charCodeAt(x); String.fromCharCode(x);
+cipher/decipher
+	Manual activity (Simple shift)
+		var message = "vigilante: what gives you the right? what's the difference between you and me? batman: i'm not wearing hockey pads."
+		encode(message): "mzxzcrekv: nyrk xzmvj pfl kyv izxyk? nyrk'j kyv uzwwvivetv svknvve pfl reu dv? srkdre: z'd efk nvrizex yftbvp gruj."
+	Automated
+		Enumerate all
+		What if we expand the number of characters? (harder for humans, same complexity for computers)
+			var message = "Vigilante: What gives you the right? What's the difference between you and me? Batman: I'm not wearing hockey pads."
+Base64
+	btoa/atob
+encryption/decryption
+	AES
+Hashing
+	SHA 256
+	HMAC
+Salting
