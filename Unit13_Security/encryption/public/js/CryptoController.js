@@ -61,7 +61,3 @@
         .module("encryptApp")
         .controller("CryptoController", ["CryptoService", CryptoController]);
 }());
-
-///////////////////
-// 5:25 - 6:10
-// 6:00 -

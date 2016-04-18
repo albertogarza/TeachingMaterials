@@ -4,42 +4,10 @@
     <meta charset="UTF-8">
     <title>Encryption</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script src="../js/ngApp.js"></script>
     <script src="../js/CryptoService.js"></script>
     <script src="../js/CryptoController.js"></script>
-    <script>
-//        function encrypt() {
-//            var data = {
-//                algorithm: $("#algorithms").val(),
-//                message: $("#message").val()
-//            };
-//            $.ajax("/encrypt", {
-//                method: "POST",
-//                data: JSON.stringify(data),
-//                contentType: "application/json",
-//                success: function(data) {
-//                    $("#encryptResult").val(data.result);
-//                }
-//            });
-//        }
-//
-//        function decrypt() {
-//            var data = {
-//                algorithm: $("#algorithms").val(),
-//                message: $("#decryptInput").val()
-//            };
-//            $.post("/decrypt", data, function(data) {
-//                $("#decryptResult").val(data.result);
-//            });
-//        }
-//
-//        $(document).ready(function() {
-//            $("#encryptNow").click(encrypt);
-//            $("#decryptNow").click(decrypt);
-//        });
-    </script>
 </head>
 <body data-ng-app="encryptApp" data-ng-controller="CryptoController as crypto">
     Algorithm:
